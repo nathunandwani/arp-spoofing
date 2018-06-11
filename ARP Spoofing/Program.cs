@@ -21,6 +21,8 @@ namespace ARP_Spoofing
 
         static void Main(string[] args)
         {
+            //Need to perform this because ARP table in Windows 10 gets updated with the falsified infos
+            //This means if the program is ran, the host won't be able to browse the internet
             //netsh -c interface ipv4 add neighbors "Wi-Fi" "IP" "MAC"
             //netsh -c interface ipv4 delete neighbors "Wi-Fi" "IP"
             
